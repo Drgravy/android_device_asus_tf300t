@@ -15,7 +15,7 @@
 $(call inherit-product-if-exists, vendor/asus/tf300t/tf300t-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/asus/tf300t/overlay
-TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
+#TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # Files needed for boot image
 PRODUCT_COPY_FILES += \
@@ -99,6 +99,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # media files
 PRODUCT_COPY_FILES += \
     device/asus/tf300t/media_codecs.xml:system/etc/media_codecs.xml \
+    device/asus/tf300t/com.asus.hardware.02.xml:system/etc/permissions/com.asus.hardware.02.xml \
     device/asus/tf300t/media_profiles.xml:system/etc/media_profiles.xml \
     device/asus/tf300t/audio_policy.conf:system/etc/audio_policy.conf
 
