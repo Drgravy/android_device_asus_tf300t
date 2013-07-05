@@ -23,11 +23,6 @@ etc/nvram_nh665.txt
 etc/nvram_nh669.txt
 etc/firmware/BCM4329B1_002.002.023.0797.0863.hcd
 etc/firmware/BCM4329B1_002.002.023.0797.0879.hcd
-etc/firmware/BCM4330B1_002.001.003.0379.0390.hcd
-etc/firmware/BCM4330B1_002.001.003.0609.0636.hcd
-etc/firmware/BCM4330B1_002.001.003.0967.0970.hcd
-etc/firmware/BCM4334B0_002.001.013.0258.0306.hcd
-etc/firmware/BCM43241B0_002.001.013.0056.0081.hcd
 etc/firmware/nvavp_aud_ucode.bin
 etc/firmware/nvavp_os_0ff00000.bin
 etc/firmware/nvavp_os_eff00000.bin
@@ -53,6 +48,7 @@ lib/egl/libGLESv2_tegra.so
 lib/hw/audio_policy.tegra.so
 lib/hw/audio.primary.tegra.so
 lib/hw/audio.usb.default.so
+lib/hw/bluetooth.default.so
 lib/hw/camera.tegra.so
 lib/hw/gps.tegra.so
 lib/hw/gralloc.tegra.so
@@ -67,6 +63,9 @@ lib/libami.so
 lib/libardrv_dynamic.so
 lib/libasound.so
 lib/libaudioavp.so
+lib/libbluetooth_jni.so \
+lib/libbt-hci.so
+lib/libbt-utils.so
 lib/libcgdrv.so
 lib/libmllite6050.so
 lib/libmlplatform6050.so
@@ -169,14 +168,4 @@ usr/share/alsa/pcm/surround41.conf
 usr/share/alsa/pcm/surround50.conf
 usr/share/alsa/pcm/surround51.conf
 usr/share/alsa/pcm/surround71.conf
-vendor/firmware/bcm4324/fw_bcmdhd_apsta.bin
-vendor/firmware/bcm4324/fw_bcmdhd.bin
-vendor/firmware/bcm4324/fw_bcmdhd_p2p.bin
-vendor/firmware/bcm4329/fw_bcmdhd_apsta.bin
-vendor/firmware/bcm4329/fw_bcmdhd.bin
-vendor/firmware/bcm4330/fw_bcmdhd_apsta.bin
-vendor/firmware/bcm4330/fw_bcmdhd.bin
-vendor/firmware/bcm4330/fw_bcmdhd_p2p.bin
-vendor/firmware/bcm4334/fw_bcmdhd_apsta.bin
-vendor/firmware/bcm4334/fw_bcmdhd.bin
-vendor/firmware/bcm4334/fw_bcmdhd_p2p.bin
+vendor/lib/libbt-vendor.so
